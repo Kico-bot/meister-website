@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+---
+<Base title="Pakete & Preise" description="Transparente Richtpreise für Websites, Betrieb und Contentpflege. Festpreis für die Erstellung, feste Pauschalen für den Betrieb.">
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Pakete &amp; Preise</span>
+      <h1>Transparente Preise, keine Überraschungen</h1>
+      <p class="lead">Die Pakete geben Ihnen eine Orientierung. Nach dem Erstgespräch erhalten Sie ein Festpreisangebot, das genau zu Ihrem Bedarf passt. Alle Preise netto zzgl. gesetzlicher Umsatzsteuer.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Website-Erstellung</h2>
+      <div class="grid grid-3" style="margin-top:2rem">
+        <div class="card price-card">
+          <h3>Start</h3>
+          <p>Für kleine Vereine, Selbständige und Initiativen.</p>
+          <div class="price">ab 1.490 € <small>einmalig</small></div>
+          <ul class="checklist">
+            <li>Bis zu 5 Seiten, responsives Design</li>
+            <li>Barrierefrei nach WCAG 2.1 AA</li>
+            <li>Kontaktmöglichkeit, Impressum, Datenschutz</li>
+            <li>Grundlegende Suchmaschinenoptimierung</li>
+          </ul>
+          <a class="btn btn-outline" href="/kontakt/">Anfragen</a>
+        </div>
+        <div class="card price-card featured">
+          <span class="badge">Am häufigsten gewählt</span>
+          <h3>Business</h3>
+          <p>Für KMU, Verbände und Einrichtungen.</p>
+          <div class="price">ab 3.900 € <small>einmalig</small></div>
+          <ul class="checklist">
+            <li>Bis zu 15 Seiten, individuelles Design</li>
+            <li>CMS mit Einweisung für Ihr Team</li>
+            <li>Neuigkeiten oder Termine als Modul</li>
+            <li>Barrierefreiheit inkl. Erklärung</li>
+            <li>Sicherheits- und Datenschutz-Check</li>
+          </ul>
+          <a class="btn btn-primary" href="/kontakt/">Anfragen</a>
+        </div>
+        <div class="card price-card">
+          <h3>Projektwebsite öffentlich</h3>
+          <p>Für Behörden, Standort- und Quartiersmanagements.</p>
+          <div class="price">ab 9.800 € <small>einmalig</small></div>
+          <ul class="checklist">
+            <li>Konzept, Design und CMS mit Rollen und Freigaben</li>
+            <li>Module wie Termine, Akteure, Karte, Downloads</li>
+            <li>BITV-2.0-Prüfprotokoll und Erklärung</li>
+            <li>Sicherheits- und Backupkonzept, AVV</li>
+            <li>Projektmanagement und formale Abnahme</li>
+          </ul>
+          <a class="btn btn-outline" href="/kontakt/">Anfragen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <h2>Betrieb und Pflege</h2>
+      <p class="lead">Eine Website ist nach dem Start nicht fertig. Mit einer festen Pauschale bleibt sie sicher, aktuell und erreichbar.</p>
+      <div class="table-wrap" style="margin-top:1.5rem">
+        <table>
+          <caption class="visually-hidden">Pauschalen für Betrieb und Pflege</caption>
+          <thead><tr><th scope="col">Leistung</th><th scope="col">Basis</th><th scope="col">Plus</th></tr></thead>
+          <tbody>
+            <tr><td>Hosting in der EU, Domain, SSL</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Sicherheitsupdates und tägliche Backups</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Monitoring der Erreichbarkeit</td><td>✓</td><td>✓</td></tr>
+            <tr><td>Reaktionszeit bei Störungen</td><td>2 Werktage</td><td>4 Stunden (werktags)</td></tr>
+            <tr><td>Contentpflege inklusive</td><td>–</td><td>2 Stunden pro Monat</td></tr>
+            <tr><td>Jährlicher Barrierefreiheits- und Sicherheitscheck</td><td>–</td><td>✓</td></tr>
+            <tr><th scope="row">Preis</th><td><strong>ab 49 € / Monat</strong></td><td><strong>ab 149 € / Monat</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:1rem">Zusätzliche Contentpflege und Erweiterungen: <strong>85 € pro Stunde</strong>, auf Wunsch als Stundenkontingent mit festem Jahresbetrag. Für öffentliche Auftraggeber kalkuliere ich Betrieb und Pflege als Pauschale über die gesamte Vertragslaufzeit.</p>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

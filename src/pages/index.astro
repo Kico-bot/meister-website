@@ -1,0 +1,117 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Cta from '../components/Cta.astro';
+import { site } from '../site';
+---
+<Base title={site.name} description="Barrierefreie, sichere und DSGVO-konforme Websites mit CMS, inklusive Betrieb und Contentpflege zum Festpreis. Für Behörden, Kommunen, Standortmanagements, Vereine und KMU.">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Webentwicklung für öffentliche Auftraggeber und KMU</span>
+        <h1>Websites, die Ihre Bürger erreichen und Prüfungen bestehen.</h1>
+        <p class="lead">Ich plane, baue und betreibe Internetauftritte, die barrierefrei nach BITV 2.0 sind, datenschutzkonform laufen und sich von Ihrem Team ohne Technikwissen pflegen lassen. Alles aus einer Hand und zum Festpreis.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/kontakt/">Kostenloses Erstgespräch</a>
+          <a class="btn btn-light" href="/oeffentliche-auftraggeber/">Für Vergabestellen</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-labelledby="hero-card-title">
+        <h2 id="hero-card-title">Was Sie bei jedem Projekt bekommen</h2>
+        <ul class="checklist">
+          <li>Barrierefreiheit nach WCAG 2.1 AA / BITV 2.0 mit Erklärung zur Barrierefreiheit</li>
+          <li>Einfaches CMS mit Einweisung für Ihre Redaktion</li>
+          <li>Hosting in der EU, keine Cookies ohne Einwilligung, kein US-Tracking</li>
+          <li>Sicherheit nach BSI-Empfehlungen, Updates und Backups inklusive</li>
+          <li>Betrieb und Contentpflege als feste Monatspauschale</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Für wen ich arbeite</span>
+        <h2>Ein Ansprechpartner für Ihren gesamten Webauftritt</h2>
+        <p class="lead">Von der Projektwebsite für ein Standortmanagement bis zum Auftritt eines Vereins: Sie bekommen eine moderne Website und jemanden, der sich danach weiter darum kümmert.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card"><div class="icon"><Icon name="users" /></div><h3>Behörden und Kommunen</h3><p>Bezirksämter, Ämter, Eigenbetriebe und Wirtschaftsförderungen, auch über Vergabeverfahren nach UVgO.</p></div>
+        <div class="card"><div class="icon"><Icon name="search" /></div><h3>Standort- und Quartiersmanagement</h3><p>Projektwebsites mit Terminen, Neuigkeiten, Akteuren und Beteiligungsangeboten.</p></div>
+        <div class="card"><div class="icon"><Icon name="chat" /></div><h3>Vereine und Verbände</h3><p>Übersichtlich, mitgliederfreundlich und von Ehrenamtlichen leicht zu pflegen.</p></div>
+        <div class="card"><div class="icon"><Icon name="server" /></div><h3>Mittelstand und KMU</h3><p>Seriöse Firmenwebsites, die bei Google gefunden werden und Anfragen bringen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Was mich unterscheidet</span>
+        <h2>Webentwicklung mit dem Blick eines Sicherheitsberaters</h2>
+        <p class="lead">Ich komme aus der Informationssicherheit und habe Behörden bei Sicherheitskonzepten nach BSI IT-Grundschutz beraten. Deshalb sind Sicherheit und Datenschutz bei mir kein Zusatzmodul, sondern von Anfang an eingebaut.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><div class="icon"><Icon name="access" /></div><h3>Barrierefrei von Anfang an</h3><p>Semantisches HTML, ausreichende Kontraste, Tastaturbedienung, Alternativtexte und Leichte-Sprache-Bereiche auf Wunsch. Geprüft mit automatischen Tests und von Hand.</p></div>
+        <div class="card"><div class="icon"><Icon name="shield" /></div><h3>Sicher nach BSI-Empfehlungen</h3><p>Sicherheits-Header, verschlüsselte Verbindungen, minimale Angriffsfläche, regelmäßige Updates und dokumentierte Backups.</p></div>
+        <div class="card"><div class="icon"><Icon name="lock" /></div><h3>Datenschutz ohne Kompromisse</h3><p>Hosting in der EU, keine Google Fonts von fremden Servern, Statistik nur ohne Cookies. Datenschutzerklärung und AV-Vertrag gehören dazu.</p></div>
+        <div class="card"><div class="icon"><Icon name="cms" /></div><h3>Einfach selbst pflegen</h3><p>Ein übersichtliches CMS, mit dem Ihr Team Termine, Neuigkeiten und Seiten ändert. Mit Einweisung und kurzer Anleitung.</p></div>
+        <div class="card"><div class="icon"><Icon name="speed" /></div><h3>Schnell und gut auffindbar</h3><p>Schlanke Seiten laden in unter einer Sekunde, funktionieren auf jedem Smartphone und sind für Suchmaschinen optimiert.</p></div>
+        <div class="card"><div class="icon"><Icon name="doc" /></div><h3>Sauber dokumentiert</h3><p>Sie erhalten Zugangsdaten, Quellcode und eine Betriebsdokumentation. Kein Anbieter-Lock-in, Ihre Website gehört Ihnen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ablauf</span>
+        <h2>In vier Schritten zur neuen Website</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Erstgespräch und Konzept</h3><p>Wir klären Ziele, Zielgruppen, Inhalte und Anforderungen. Sie bekommen ein Konzept mit Seitenstruktur und Festpreis.</p></li>
+        <li><h3>Design und Entwicklung</h3><p>Ich entwickle Design und Website in Abstimmung mit Ihnen. Sie sehen den Fortschritt jederzeit auf einer Testumgebung.</p></li>
+        <li><h3>Prüfung und Abnahme</h3><p>Test auf Barrierefreiheit, Datenschutz, Sicherheit und Ladezeit. Danach Einweisung Ihrer Redaktion und Abnahme.</p></li>
+        <li><h3>Betrieb und Pflege</h3><p>Nach dem Start kümmere ich mich um Hosting, Updates, Backups und auf Wunsch um die Pflege Ihrer Inhalte.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-navy">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center">
+        <div>
+          <span class="eyebrow">Öffentliche Auftraggeber</span>
+          <h2>Vergabeverfahren? Ich kenne beide Seiten.</h2>
+          <p>Ich habe mehrere Jahre in Projekten für Behörden gearbeitet und weiß, worauf es in Leistungsbeschreibungen ankommt: nachvollziehbare Konzepte, belastbare Zeitpläne, klare Pauschalen und vollständige Unterlagen.</p>
+          <div class="btn-row"><a class="btn btn-primary" href="/oeffentliche-auftraggeber/">Mehr für Vergabestellen</a></div>
+        </div>
+        <div class="grid grid-2">
+          <div class="card"><div class="stat">BITV 2.0</div><p>Barrierefreiheit als fester Bestandteil jedes Angebots</p></div>
+          <div class="card"><div class="stat">BSI</div><p>Sicherheitskonzept nach IT-Grundschutz-Logik auf Wunsch</p></div>
+          <div class="card"><div class="stat">EU</div><p>Hosting und Dienstleister ausschließlich in der EU</p></div>
+          <div class="card"><div class="stat">Fix</div><p>Festpreise für Erstellung, Pauschalen für Betrieb</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Häufige Fragen</span>
+        <h2>Gut zu wissen</h2>
+      </div>
+      <div class="prose">
+        <details><summary>Was kostet eine Website?</summary><p>Eine kleine Website mit wenigen Seiten beginnt bei einem niedrigen vierstelligen Betrag, eine umfangreiche Projektwebsite mit CMS, Terminkalender und mehrjährigem Betrieb liegt höher. Sie bekommen immer einen Festpreis, Richtwerte finden Sie unter <a href="/pakete/">Pakete &amp; Preise</a>.</p></details>
+        <details><summary>Wie lange dauert ein Projekt?</summary><p>Eine kleine Website ist in zwei bis vier Wochen fertig, eine größere Projektwebsite in sechs bis zwölf Wochen. Entscheidend ist meist, wie schnell die Inhalte bereitstehen.</p></details>
+        <details><summary>Können wir die Inhalte selbst ändern?</summary><p>Ja. Jede Website bekommt ein einfaches CMS. Ihre Redaktion wird eingewiesen und erhält eine kurze Anleitung. Wer keine Zeit hat, bucht die Contentpflege bei mir.</p></details>
+        <details><summary>Übernehmen Sie auch Texte und Fotos?</summary><p>Ich unterstütze bei Seitenstruktur, Texten für das Web und Leichter Sprache. Für professionelle Fotos oder Illustrationen arbeite ich mit Partnern zusammen.</p></details>
+        <details><summary>Was passiert, wenn wir später den Dienstleister wechseln?</summary><p>Sie erhalten den vollständigen Quellcode, alle Zugänge und eine Dokumentation. Die Website läuft auch ohne mich weiter.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

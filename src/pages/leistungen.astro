@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Cta from '../components/Cta.astro';
+---
+<Base title="Leistungen" description="Konzeption, Webdesign, Entwicklung mit CMS, Barrierefreiheit, Hosting, Wartung und Contentpflege – alles aus einer Hand.">
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Leistungen</span>
+      <h1>Alles, was Ihre Website braucht, aus einer Hand</h1>
+      <p class="lead">Von der ersten Idee über Design und Entwicklung bis zum laufenden Betrieb. Sie haben einen Ansprechpartner, der Ihr Projekt von Anfang bis Ende kennt.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      <div class="card"><div class="icon"><Icon name="search" /></div><h3>Konzeption und Beratung</h3>
+        <ul class="checklist"><li>Analyse von Zielen, Zielgruppen und bestehender Website</li><li>Seitenstruktur, Navigationskonzept und Inhaltsplan</li><li>Anforderungen an Barrierefreiheit und Datenschutz</li><li>Zeitplan mit Meilensteinen</li></ul></div>
+      <div class="card"><div class="icon"><Icon name="cms" /></div><h3>Webdesign und Entwicklung</h3>
+        <ul class="checklist"><li>Individuelles, responsives Design passend zu Ihrem Erscheinungsbild</li><li>Entwicklung mit bewährtem, einfach bedienbarem CMS</li><li>Module wie Termine, Neuigkeiten, Akteursverzeichnis, Karten oder Downloads</li><li>Mehrsprachigkeit und Leichte Sprache auf Wunsch</li></ul></div>
+      <div class="card"><div class="icon"><Icon name="access" /></div><h3>Barrierefreiheit</h3>
+        <ul class="checklist"><li>Umsetzung nach WCAG 2.1 Level AA und BITV 2.0</li><li>Prüfung mit automatischen Werkzeugen und manuellen Tests</li><li>Erklärung zur Barrierefreiheit und Feedback-Mechanismus</li><li>Prüfung und Verbesserung bestehender Websites</li></ul></div>
+      <div class="card"><div class="icon"><Icon name="shield" /></div><h3>Sicherheit und Datenschutz</h3>
+        <ul class="checklist"><li>Sicherheits-Header, TLS, gehärtete Konfiguration</li><li>Datenschutzkonforme Einbindung von Karten, Videos und Formularen</li><li>Cookiefreie Besucherstatistik auf Wunsch</li><li>Auftragsverarbeitungsvertrag (AVV) nach Art. 28 DSGVO</li></ul></div>
+      <div class="card"><div class="icon"><Icon name="server" /></div><h3>Hosting und Betrieb</h3>
+        <ul class="checklist"><li>Hosting bei Anbietern in der EU</li><li>Domain, SSL-Zertifikat und E-Mail-Weiterleitung</li><li>Sicherheitsupdates, Monitoring und tägliche Backups</li><li>Feste Reaktionszeiten bei Störungen</li></ul></div>
+      <div class="card"><div class="icon"><Icon name="wrench" /></div><h3>Contentpflege und Redaktion</h3>
+        <ul class="checklist"><li>Einpflegen von Neuigkeiten, Terminen und Dokumenten</li><li>Stundenkontingent als Jahrespauschale</li><li>Schulung Ihrer Redakteurinnen und Redakteure</li><li>Regelmäßige Auswertung und Verbesserungsvorschläge</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container prose">
+      <span class="eyebrow">Technik</span>
+      <h2>Bewährte Technik statt Experimente</h2>
+      <p>Ich wähle die Technik nach Ihrem Bedarf: ein etabliertes Open-Source-CMS, wenn viele Personen Inhalte pflegen, oder eine besonders schnelle und sichere statische Website, wenn sich Inhalte selten ändern. In beiden Fällen gilt: offene Standards, keine Lizenzkosten für proprietäre Baukästen und vollständige Übergabe des Quellcodes.</p>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

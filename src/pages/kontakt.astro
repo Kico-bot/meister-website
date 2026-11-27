@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../site';
+---
+<Base title="Kontakt" description="Kostenloses Erstgespräch zu Ihrer neuen Website vereinbaren. Antwort in der Regel innerhalb eines Werktags.">
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Kontakt</span>
+      <h1>Erzählen Sie mir von Ihrem Projekt</h1>
+      <p class="lead">Ich melde mich in der Regel innerhalb eines Werktags. Das Erstgespräch ist kostenlos und unverbindlich.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      <div>
+        <h2>Anfrage senden</h2>
+        <form id="kontaktformular" class="card" novalidate>
+          <p><label for="name"><strong>Name</strong> (Pflichtfeld)</label><br /><input id="name" name="name" autocomplete="name" required /></p>
+          <p><label for="org"><strong>Organisation</strong></label><br /><input id="org" name="org" autocomplete="organization" /></p>
+          <p><label for="art"><strong>Art des Projekts</strong></label><br />
+            <select id="art" name="art">
+              <option>Neue Website</option>
+              <option>Relaunch einer bestehenden Website</option>
+              <option>Ausschreibung / Vergabeverfahren</option>
+              <option>Betrieb und Pflege</option>
+              <option>Barrierefreiheits- oder Sicherheitscheck</option>
+              <option>Sonstiges</option>
+            </select></p>
+          <p><label for="nachricht"><strong>Ihre Nachricht</strong> (Pflichtfeld)</label><br /><textarea id="nachricht" name="nachricht" rows="6" required></textarea></p>
+          <p style="font-size:.92rem;color:var(--muted)">Beim Absenden öffnet sich Ihr E-Mail-Programm mit einer vorbereiteten Nachricht. Es werden keine Daten auf dieser Website gespeichert. Mehr dazu in der <a href="/datenschutz/">Datenschutzerklärung</a>.</p>
+          <p id="formfehler" role="alert" style="color:#b3261e;font-weight:600"></p>
+          <button class="btn btn-primary" type="submit">E-Mail vorbereiten</button>
+        </form>
+      </div>
+      <div>
+        <h2>Direkter Kontakt</h2>
+        <div class="card">
+          <p><strong>{site.owner}</strong><br />{site.name}</p>
+          <p>E-Mail: <a href={`mailto:${site.email}`}>{site.email}</a></p>
+          {site.phone && <p>Telefon: <a href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a></p>}
+          <p style="margin:0">Termine vor Ort in München und Umgebung, bundesweit per Videocall.</p>
+        </div>
+        <div class="card" style="margin-top:1.25rem">
+          <h3>Für Vergabestellen</h3>
+          <p style="margin:0">Senden Sie mir gern Ihre Leistungsbeschreibung oder den Link zur Bekanntmachung. Ich prüfe kurzfristig, ob ich ein Angebot abgeben kann.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    input, select, textarea { width: 100%; font: inherit; padding: .7rem .8rem; border: 1px solid #9aa8b8; border-radius: 8px; margin-top: .3rem; background: #fff; color: inherit; }
+    input:focus, select:focus, textarea:focus { outline: 3px solid var(--accent); outline-offset: 1px; border-color: var(--navy); }
+  </style>
+  <script is:inline define:vars={{ email: site.email }}>
+    const f = document.getElementById('kontaktformular');
+    f.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const d = new FormData(f);
+      const err = document.getElementById('formfehler');
+      if (!d.get('name').trim() || !d.get('nachricht').trim()) {
+        err.textContent = 'Bitte füllen Sie Name und Nachricht aus.';
+        (d.get('name').trim() ? f.nachricht : f.name).focus();
+        return;
+      }
+      err.textContent = '';
+      const subject = `Anfrage: ${d.get('art')}${d.get('org') ? ' – ' + d.get('org') : ''}`;
+      const body = `${d.get('nachricht')}\n\n${d.get('name')}${d.get('org') ? '\n' + d.get('org') : ''}`;
+      window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</Base>

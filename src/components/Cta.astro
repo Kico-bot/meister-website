@@ -1,0 +1,22 @@
+---
+import { site } from '../site';
+interface Props { title?: string; text?: string }
+const {
+  title = 'Lassen Sie uns über Ihr Projekt sprechen',
+  text = 'Erstgespräch kostenlos und unverbindlich, 30 Minuten. Danach bekommen Sie ein schriftliches Festpreisangebot.',
+} = Astro.props;
+---
+<section class="section">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>{title}</h2>
+        <p style="margin:0">{text}</p>
+      </div>
+      <div class="btn-row" style="margin:0">
+        <a class="btn btn-primary" href="/kontakt/">Erstgespräch vereinbaren</a>
+        <a class="btn btn-light" href={`mailto:${site.email}`}>E-Mail schreiben</a>
+      </div>
+    </div>
+  </div>
+</section>

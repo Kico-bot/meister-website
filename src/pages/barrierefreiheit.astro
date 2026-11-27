@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../site';
+---
+<Base title="Erklärung zur Barrierefreiheit" description="Erklärung zur Barrierefreiheit der Website webseiten-meister.de.">
+  <section class="page-head"><div class="container"><h1>Erklärung zur Barrierefreiheit</h1></div></section>
+  <section class="section"><div class="container prose">
+    <p>Ich möchte, dass alle Menschen diese Website nutzen können. Sie wurde nach den Web Content Accessibility Guidelines (WCAG) 2.1 auf Stufe AA gestaltet und entwickelt.</p>
+    <h2>Umgesetzte Maßnahmen</h2>
+    <ul>
+      <li>Vollständige Bedienbarkeit per Tastatur mit sichtbarem Fokus</li>
+      <li>Sprunglink zum Hauptinhalt</li>
+      <li>Semantische Überschriften, Landmarken und Tabellen</li>
+      <li>Farbkontraste nach WCAG 2.1 AA</li>
+      <li>Skalierbare Schrift und Darstellung auf allen Bildschirmgrößen</li>
+      <li>Berücksichtigung der Systemeinstellung „Bewegung reduzieren“</li>
+    </ul>
+    <h2>Stand der Vereinbarkeit</h2>
+    <p>Diese Website ist nach meiner eigenen Prüfung weitgehend mit WCAG 2.1 AA vereinbar. Sollten Sie dennoch auf Barrieren stoßen, freue ich mich über Ihren Hinweis.</p>
+    <h2>Feedback und Kontakt</h2>
+    <p>Barrieren melden Sie bitte per E-Mail an <a href={`mailto:${site.email}`}>{site.email}</a>. Ich antworte innerhalb von zwei Wochen.</p>
+    <p style="color:var(--muted);font-size:.92rem">Erstellt im November 2026 auf Grundlage einer Selbstbewertung.</p>
+  </div></section>
+</Base>

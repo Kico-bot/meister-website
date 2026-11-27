@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webseiten-meister.de/sitemap-index.xml
