@@ -4,26 +4,26 @@ import Icon from '../components/Icon.astro';
 import Cta from '../components/Cta.astro';
 import { site } from '../site';
 ---
-<Base title={site.name} description="Barrierefreie, sichere und DSGVO-konforme Websites mit CMS, inklusive Betrieb und Contentpflege zum Festpreis. Für Behörden, Kommunen, Standortmanagements, Vereine und KMU.">
+<Base title={site.name} description="Webagentur für öffentliche Auftraggeber: Konzeption, Webdesign, CMS-Entwicklung mit TYPO3, WordPress, Drupal und mehr, Barrierefreiheit nach BITV 2.0, Hosting, Betrieb und Contentpflege.">
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="eyebrow">Webentwicklung für öffentliche Auftraggeber und KMU</span>
-        <h1>Websites, die Ihre Bürger erreichen und Prüfungen bestehen.</h1>
-        <p class="lead">Ich plane, baue und betreibe Internetauftritte, die barrierefrei nach BITV 2.0 sind, datenschutzkonform laufen und sich von Ihrem Team ohne Technikwissen pflegen lassen. Alles aus einer Hand und zum Festpreis.</p>
+        <span class="eyebrow">Webagentur für öffentliche Auftraggeber</span>
+        <h1>Digitale Auftritte für Verwaltung, Kommunen und Förderprojekte.</h1>
+        <p class="lead">Wir konzipieren, gestalten und entwickeln Websites und Portale für die öffentliche Hand und betreuen sie über die gesamte Vertragslaufzeit. Auf dem CMS Ihrer Wahl, barrierefrei nach BITV 2.0 und abgestimmt auf die Anforderungen Ihrer Leistungsbeschreibung.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="/kontakt/">Kostenloses Erstgespräch</a>
+          <a class="btn btn-primary" href="/kontakt/">Projekt anfragen</a>
           <a class="btn btn-light" href="/oeffentliche-auftraggeber/">Für Vergabestellen</a>
         </div>
       </div>
       <aside class="hero-card" aria-labelledby="hero-card-title">
-        <h2 id="hero-card-title">Was Sie bei jedem Projekt bekommen</h2>
+        <h2 id="hero-card-title">Alles aus einer Hand</h2>
         <ul class="checklist">
-          <li>Barrierefreiheit nach WCAG 2.1 AA / BITV 2.0 mit Erklärung zur Barrierefreiheit</li>
-          <li>Einfaches CMS mit Einweisung für Ihre Redaktion</li>
-          <li>Hosting in der EU, keine Cookies ohne Einwilligung, kein US-Tracking</li>
-          <li>Sicherheit nach BSI-Empfehlungen, Updates und Backups inklusive</li>
-          <li>Betrieb und Contentpflege als feste Monatspauschale</li>
+          <li>Konzeption, UX und Webdesign im Corporate Design</li>
+          <li>Entwicklung mit TYPO3, WordPress, Drupal, Contao und weiteren CMS</li>
+          <li>Barrierefreiheit nach WCAG 2.1 AA / BITV 2.0</li>
+          <li>Hosting in Deutschland bzw. der EU, Wartung und Support</li>
+          <li>Contentpflege und Redaktionsschulungen</li>
         </ul>
       </aside>
     </div>
@@ -32,15 +32,49 @@ import { site } from '../site';
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Für wen ich arbeite</span>
-        <h2>Ein Ansprechpartner für Ihren gesamten Webauftritt</h2>
-        <p class="lead">Von der Projektwebsite für ein Standortmanagement bis zum Auftritt eines Vereins: Sie bekommen eine moderne Website und jemanden, der sich danach weiter darum kümmert.</p>
+        <span class="eyebrow">Leistungen</span>
+        <h2>Vom Konzept bis zum laufenden Betrieb</h2>
+        <p class="lead">Wir begleiten Ihr Projekt in allen Phasen, die in öffentlichen Ausschreibungen üblicherweise gefordert sind.</p>
       </div>
-      <div class="grid grid-4">
-        <div class="card"><div class="icon"><Icon name="users" /></div><h3>Behörden und Kommunen</h3><p>Bezirksämter, Ämter, Eigenbetriebe und Wirtschaftsförderungen, auch über Vergabeverfahren nach UVgO.</p></div>
-        <div class="card"><div class="icon"><Icon name="search" /></div><h3>Standort- und Quartiersmanagement</h3><p>Projektwebsites mit Terminen, Neuigkeiten, Akteuren und Beteiligungsangeboten.</p></div>
-        <div class="card"><div class="icon"><Icon name="chat" /></div><h3>Vereine und Verbände</h3><p>Übersichtlich, mitgliederfreundlich und von Ehrenamtlichen leicht zu pflegen.</p></div>
-        <div class="card"><div class="icon"><Icon name="server" /></div><h3>Mittelstand und KMU</h3><p>Seriöse Firmenwebsites, die bei Google gefunden werden und Anfragen bringen.</p></div>
+      <div class="grid grid-3">
+        <div class="card"><div class="icon"><Icon name="search" /></div><h3>Konzeption und UX</h3><p>Zielgruppenanalyse, Informationsarchitektur, Navigations- und Inhaltskonzept, Wireframes und Klick-Prototypen.</p></div>
+        <div class="card"><div class="icon"><Icon name="doc" /></div><h3>Webdesign</h3><p>Responsives Design auf Basis Ihres Corporate Designs, inklusive Förderlogos und Pflichthinweisen von EU, Bund und Ländern.</p></div>
+        <div class="card"><div class="icon"><Icon name="cms" /></div><h3>CMS-Entwicklung</h3><p>Umsetzung auf dem System, das zu Ihren Vorgaben passt: TYPO3, WordPress, Drupal, Contao, Joomla, Neos oder headless.</p></div>
+        <div class="card"><div class="icon"><Icon name="access" /></div><h3>Barrierefreiheit</h3><p>Umsetzung und Prüfung nach BITV 2.0, Erklärung zur Barrierefreiheit, Leichte Sprache und Gebärdensprache-Inhalte.</p></div>
+        <div class="card"><div class="icon"><Icon name="server" /></div><h3>Hosting und Betrieb</h3><p>Hosting in deutschen Rechenzentren, Updates, Backups, Monitoring und Support mit vereinbarten Reaktionszeiten.</p></div>
+        <div class="card"><div class="icon"><Icon name="wrench" /></div><h3>Contentpflege und Schulung</h3><p>Redaktionelle Pflege als Stundenkontingent, Schulungen und Handbücher für Ihre Redakteurinnen und Redakteure.</p></div>
+      </div>
+      <div class="btn-row"><a class="btn btn-outline" href="/leistungen/">Alle Leistungen ansehen</a></div>
+    </div>
+  </section>
+
+  <section class="section section-navy">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">CMS &amp; Technik</span>
+        <h2>Wir arbeiten mit dem System, das zu Ihnen passt</h2>
+        <p>Viele Verwaltungen haben feste Vorgaben für das Redaktionssystem oder wollen bestehende Inhalte weiter nutzen. Wir setzen Projekte auf allen gängigen Open-Source-CMS um, migrieren Inhalte aus Altsystemen und beraten neutral, wenn die Wahl noch offen ist.</p>
+      </div>
+      <ul class="tags" aria-label="Content-Management-Systeme">
+        <li>TYPO3</li><li>WordPress</li><li>Drupal</li><li>Contao</li><li>Joomla</li><li>Neos</li><li>Craft CMS</li><li>Strapi</li><li>Directus</li><li>Statische Websites (Astro, Hugo)</li>
+      </ul>
+      <div class="btn-row"><a class="btn btn-primary" href="/cms/">Mehr zu CMS &amp; Technik</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Typische Projekte</span>
+        <h2>Wofür öffentliche Auftraggeber uns beauftragen</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><h3>Projektwebsites</h3><p>Für Standort-, Quartiers- und Citymanagement, Stadtentwicklungs- und Förderprojekte, mit Terminen, Neuigkeiten und Akteursverzeichnis.</p></div>
+        <div class="card"><h3>Behörden- und Einrichtungsportale</h3><p>Internetauftritte von Ämtern, Eigenbetrieben, Bibliotheken, Museen, Schulen und Hochschulen.</p></div>
+        <div class="card"><h3>Wirtschaftsförderung und Standortmarketing</h3><p>Portale mit Gewerbeflächen, Unternehmensverzeichnis, Ansprechpartnern und Veranstaltungen.</p></div>
+        <div class="card"><h3>Bürgerbeteiligung</h3><p>Informationsseiten zu Planungsvorhaben mit Umfragen, Beteiligungsformularen und Dokumentation.</p></div>
+        <div class="card"><h3>Kampagnen- und Themenseiten</h3><p>Zeitlich begrenzte Websites zu Aktionen, Jubiläen oder Informationskampagnen.</p></div>
+        <div class="card"><h3>Relaunch und Migration</h3><p>Modernisierung bestehender Auftritte, Umzug auf ein aktuelles CMS und Übernahme vorhandener Inhalte.</p></div>
       </div>
     </div>
   </section>
@@ -48,17 +82,16 @@ import { site } from '../site';
   <section class="section section-soft">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Was mich unterscheidet</span>
-        <h2>Webentwicklung mit dem Blick eines Sicherheitsberaters</h2>
-        <p class="lead">Ich komme aus der Informationssicherheit und habe Behörden bei Sicherheitskonzepten nach BSI IT-Grundschutz beraten. Deshalb sind Sicherheit und Datenschutz bei mir kein Zusatzmodul, sondern von Anfang an eingebaut.</p>
+        <span class="eyebrow">Warum Webseiten-Meister</span>
+        <h2>Wir kennen die Anforderungen der öffentlichen Hand</h2>
       </div>
       <div class="grid grid-3">
-        <div class="card"><div class="icon"><Icon name="access" /></div><h3>Barrierefrei von Anfang an</h3><p>Semantisches HTML, ausreichende Kontraste, Tastaturbedienung, Alternativtexte und Leichte-Sprache-Bereiche auf Wunsch. Geprüft mit automatischen Tests und von Hand.</p></div>
-        <div class="card"><div class="icon"><Icon name="shield" /></div><h3>Sicher nach BSI-Empfehlungen</h3><p>Sicherheits-Header, verschlüsselte Verbindungen, minimale Angriffsfläche, regelmäßige Updates und dokumentierte Backups.</p></div>
-        <div class="card"><div class="icon"><Icon name="lock" /></div><h3>Datenschutz ohne Kompromisse</h3><p>Hosting in der EU, keine Google Fonts von fremden Servern, Statistik nur ohne Cookies. Datenschutzerklärung und AV-Vertrag gehören dazu.</p></div>
-        <div class="card"><div class="icon"><Icon name="cms" /></div><h3>Einfach selbst pflegen</h3><p>Ein übersichtliches CMS, mit dem Ihr Team Termine, Neuigkeiten und Seiten ändert. Mit Einweisung und kurzer Anleitung.</p></div>
-        <div class="card"><div class="icon"><Icon name="speed" /></div><h3>Schnell und gut auffindbar</h3><p>Schlanke Seiten laden in unter einer Sekunde, funktionieren auf jedem Smartphone und sind für Suchmaschinen optimiert.</p></div>
-        <div class="card"><div class="icon"><Icon name="doc" /></div><h3>Sauber dokumentiert</h3><p>Sie erhalten Zugangsdaten, Quellcode und eine Betriebsdokumentation. Kein Anbieter-Lock-in, Ihre Website gehört Ihnen.</p></div>
+        <div class="card"><div class="icon"><Icon name="access" /></div><h3>Barrierefrei als Standard</h3><p>BITV 2.0 und WCAG 2.1 AA sind bei uns kein Aufpreis, sondern Grundlage jedes Projekts. Mit Prüfprotokoll zur Abnahme.</p></div>
+        <div class="card"><div class="icon"><Icon name="lock" /></div><h3>Datenschutz und Sicherheit</h3><p>Hosting in Deutschland, AV-Vertrag, keine Drittanbieter ohne Einwilligung und Härtung nach BSI-Empfehlungen.</p></div>
+        <div class="card"><div class="icon"><Icon name="doc" /></div><h3>Erfahrung mit Vergaben</h3><p>Vollständige Angebotsunterlagen, nachvollziehbare Konzepte und klare Pauschalen für Erstellung, Betrieb und Pflege.</p></div>
+        <div class="card"><div class="icon"><Icon name="users" /></div><h3>Feste Ansprechperson</h3><p>Ein Projektleiter vom Auftakt bis zum Vertragsende, mit geregelter Vertretung und kurzen Wegen.</p></div>
+        <div class="card"><div class="icon"><Icon name="euro" /></div><h3>Planbare Kosten</h3><p>Festpreis für die Erstellung, Pauschalen für Betrieb und Contentpflege über mehrere Jahre. Ideal für Haushaltsplanung und Fördermittel.</p></div>
+        <div class="card"><div class="icon"><Icon name="shield" /></div><h3>Kein Lock-in</h3><p>Open-Source-Systeme, vollständige Übergabe von Quellcode, Zugängen und Dokumentation.</p></div>
       </div>
     </div>
   </section>
@@ -66,49 +99,30 @@ import { site } from '../site';
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Ablauf</span>
-        <h2>In vier Schritten zur neuen Website</h2>
+        <span class="eyebrow">Projektablauf</span>
+        <h2>So läuft ein Projekt mit uns ab</h2>
       </div>
       <ol class="steps">
-        <li><h3>Erstgespräch und Konzept</h3><p>Wir klären Ziele, Zielgruppen, Inhalte und Anforderungen. Sie bekommen ein Konzept mit Seitenstruktur und Festpreis.</p></li>
-        <li><h3>Design und Entwicklung</h3><p>Ich entwickle Design und Website in Abstimmung mit Ihnen. Sie sehen den Fortschritt jederzeit auf einer Testumgebung.</p></li>
-        <li><h3>Prüfung und Abnahme</h3><p>Test auf Barrierefreiheit, Datenschutz, Sicherheit und Ladezeit. Danach Einweisung Ihrer Redaktion und Abnahme.</p></li>
-        <li><h3>Betrieb und Pflege</h3><p>Nach dem Start kümmere ich mich um Hosting, Updates, Backups und auf Wunsch um die Pflege Ihrer Inhalte.</p></li>
+        <li><h3>Auftakt und Konzept</h3><p>Kick-off, Anforderungsaufnahme, Seitenstruktur, Funktionsumfang und Zeitplan mit Meilensteinen.</p></li>
+        <li><h3>Design und Entwicklung</h3><p>Designentwürfe, Umsetzung im CMS, Einrichtung der Module und Übernahme der Inhalte auf einer Testumgebung.</p></li>
+        <li><h3>Test, Schulung, Abnahme</h3><p>Prüfung auf Barrierefreiheit, Datenschutz, Sicherheit und Browser. Redaktionsschulung, Handbuch und formale Abnahme.</p></li>
+        <li><h3>Betrieb und Pflege</h3><p>Livegang, Hosting, Wartung, Support und Contentpflege bis zum Ende der Vertragslaufzeit.</p></li>
       </ol>
     </div>
   </section>
 
-  <section class="section section-navy">
-    <div class="container">
-      <div class="grid grid-2" style="align-items:center">
-        <div>
-          <span class="eyebrow">Öffentliche Auftraggeber</span>
-          <h2>Vergabeverfahren? Ich kenne beide Seiten.</h2>
-          <p>Ich habe mehrere Jahre in Projekten für Behörden gearbeitet und weiß, worauf es in Leistungsbeschreibungen ankommt: nachvollziehbare Konzepte, belastbare Zeitpläne, klare Pauschalen und vollständige Unterlagen.</p>
-          <div class="btn-row"><a class="btn btn-primary" href="/oeffentliche-auftraggeber/">Mehr für Vergabestellen</a></div>
-        </div>
-        <div class="grid grid-2">
-          <div class="card"><div class="stat">BITV 2.0</div><p>Barrierefreiheit als fester Bestandteil jedes Angebots</p></div>
-          <div class="card"><div class="stat">BSI</div><p>Sicherheitskonzept nach IT-Grundschutz-Logik auf Wunsch</p></div>
-          <div class="card"><div class="stat">EU</div><p>Hosting und Dienstleister ausschließlich in der EU</p></div>
-          <div class="card"><div class="stat">Fix</div><p>Festpreise für Erstellung, Pauschalen für Betrieb</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
+  <section class="section section-soft">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Häufige Fragen</span>
         <h2>Gut zu wissen</h2>
       </div>
       <div class="prose">
-        <details><summary>Was kostet eine Website?</summary><p>Das hängt vom Umfang ab: Eine kleine Vereinswebsite ist deutlich günstiger als eine Projektwebsite mit CMS, Terminkalender und mehrjährigem Betrieb. Nach dem kostenlosen Erstgespräch bekommen Sie immer einen schriftlichen Festpreis. Einen Überblick gibt es unter <a href="/pakete/">Pakete</a>.</p></details>
-        <details><summary>Wie lange dauert ein Projekt?</summary><p>Eine kleine Website ist in zwei bis vier Wochen fertig, eine größere Projektwebsite in sechs bis zwölf Wochen. Entscheidend ist meist, wie schnell die Inhalte bereitstehen.</p></details>
-        <details><summary>Können wir die Inhalte selbst ändern?</summary><p>Ja. Jede Website bekommt ein einfaches CMS. Ihre Redaktion wird eingewiesen und erhält eine kurze Anleitung. Wer keine Zeit hat, bucht die Contentpflege bei mir.</p></details>
-        <details><summary>Übernehmen Sie auch Texte und Fotos?</summary><p>Ich unterstütze bei Seitenstruktur, Texten für das Web und Leichter Sprache. Für professionelle Fotos oder Illustrationen arbeite ich mit Partnern zusammen.</p></details>
-        <details><summary>Was passiert, wenn wir später den Dienstleister wechseln?</summary><p>Sie erhalten den vollständigen Quellcode, alle Zugänge und eine Dokumentation. Die Website läuft auch ohne mich weiter.</p></details>
+        <details><summary>Mit welchem CMS arbeiten Sie?</summary><p>Mit dem, das zu Ihren Anforderungen passt. Wir setzen Projekte unter anderem mit TYPO3, WordPress, Drupal, Contao, Joomla und Neos um. Gibt Ihre Verwaltung ein System vor, arbeiten wir damit. Ist die Wahl offen, empfehlen wir eines nach Umfang, Redaktionsprozess und Betriebsaufwand.</p></details>
+        <details><summary>Können Sie unsere bestehende Website übernehmen?</summary><p>Ja. Wir übernehmen Betrieb und Pflege bestehender Websites oder migrieren Inhalte aus Ihrem Altsystem in ein neues CMS, einschließlich Weiterleitungen, damit Links und Suchmaschinenplatzierungen erhalten bleiben.</p></details>
+        <details><summary>Nehmen Sie an öffentlichen Ausschreibungen teil?</summary><p>Ja, unter anderem bei Verfahren nach UVgO und VgV, bei Verhandlungsvergaben und Direktaufträgen. Wir reichen Angebote über die gängigen Vergabeplattformen ein.</p></details>
+        <details><summary>Was kostet eine Website?</summary><p>Das hängt vom Umfang ab: Eine kleine Projektwebsite ist deutlich günstiger als ein Portal mit vielen Modulen und mehrjährigem Betrieb. Nach einem Gespräch erhalten Sie ein Angebot mit Festpreis oder eine Kostenschätzung für Ihre Haushaltsplanung.</p></details>
+        <details><summary>Wie lange dauert ein Projekt?</summary><p>Eine kleine Projektwebsite ist in vier bis sechs Wochen umgesetzt, ein größeres Portal in drei bis sechs Monaten. Den genauen Zeitplan stimmen wir im Konzept mit Ihnen ab.</p></details>
       </div>
     </div>
   </section>

@@ -6,8 +6,8 @@ import { site } from '../site';
   <section class="page-head">
     <div class="container">
       <span class="eyebrow">Kontakt</span>
-      <h1>Erzählen Sie mir von Ihrem Projekt</h1>
-      <p class="lead">Ich melde mich in der Regel innerhalb eines Werktags. Das Erstgespräch ist kostenlos und unverbindlich.</p>
+      <h1>Erzählen Sie uns von Ihrem Projekt</h1>
+      <p class="lead">Wir melden uns in der Regel innerhalb eines Werktags. Das Erstgespräch ist kostenlos und unverbindlich.</p>
     </div>
   </section>
 
@@ -36,14 +36,14 @@ import { site } from '../site';
       <div>
         <h2>Direkter Kontakt</h2>
         <div class="card">
-          <p><strong>{site.owner}</strong><br />{site.name}</p>
+          <p>{site.name}<br />Ansprechpartner: <strong>{site.owner}</strong></p>
           <p>E-Mail: <a href={`mailto:${site.email}`}>{site.email}</a></p>
           {site.phone && <p>Telefon: <a href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a></p>}
           <p style="margin:0">Termine vor Ort in München und Umgebung, bundesweit per Videocall.</p>
         </div>
         <div class="card" style="margin-top:1.25rem">
           <h3>Für Vergabestellen</h3>
-          <p style="margin:0">Senden Sie mir gern Ihre Leistungsbeschreibung oder den Link zur Bekanntmachung. Ich prüfe kurzfristig, ob ich ein Angebot abgeben kann.</p>
+          <p style="margin:0">Senden Sie uns gern Ihre Leistungsbeschreibung oder den Link zur Bekanntmachung. Wir prüfen kurzfristig, ob wir ein Angebot abgeben können.</p>
         </div>
       </div>
     </div>

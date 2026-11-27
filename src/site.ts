@@ -1,7 +1,7 @@
 // Zentrale Angaben – hier einmal pflegen, sie werden überall auf der Seite verwendet.
 export const site = {
   name: 'Webseiten-Meister',
-  claim: 'Websites für Verwaltung, Vereine und Mittelstand',
+  claim: 'Webagentur für öffentliche Auftraggeber',
   url: 'https://webseiten-meister.de',
   owner: 'Kristian Dabic',
   email: 'info@webseiten-meister.de',
@@ -12,9 +12,9 @@ export const site = {
 };
 
 export const nav = [
-  { href: '/', label: 'Start' },
   { href: '/leistungen/', label: 'Leistungen' },
+  { href: '/cms/', label: 'CMS & Technik' },
   { href: '/oeffentliche-auftraggeber/', label: 'Öffentliche Auftraggeber' },
   { href: '/pakete/', label: 'Pakete' },
-  { href: '/ueber-mich/', label: 'Über mich' },
+  { href: '/ueber-uns/', label: 'Über uns' },
 ];

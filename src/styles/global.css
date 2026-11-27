@@ -172,3 +172,11 @@ details[open] summary { border-bottom: 1px solid var(--line); margin-bottom: 1re
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 2.5rem; padding-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
 
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Tags */
+.tags { display: flex; flex-wrap: wrap; gap: .6rem; list-style: none; padding: 0; margin: 0; }
+.tags li { background: #fff; border: 1px solid var(--line); border-radius: 99px; padding: .45rem 1rem; font-weight: 650; color: var(--navy); font-size: .97rem; }
+.section-navy .tags li { background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.18); color: #fff; }
+.card h3 + p.meta { color: var(--muted); font-size: .92rem; margin-top: -.2rem; }
+.two-col-list { columns: 2 16rem; column-gap: 2rem; }
+.two-col-list li { break-inside: avoid; }

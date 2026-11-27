@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+
+const systems = [
+  { name: 'TYPO3', meta: 'Enterprise-CMS, in Verwaltungen weit verbreitet', text: 'Stark bei großen Auftritten mit vielen Redakteuren, Mehrsprachigkeit, feinen Rechten und mehreren Websites in einer Installation. Langzeit-Support-Versionen sorgen für Planungssicherheit über viele Jahre.' },
+  { name: 'WordPress', meta: 'Flexibel und leicht zu bedienen', text: 'Ideal für Projektwebsites, Kampagnen und kleinere Einrichtungen. Sehr einfache Redaktion, große Auswahl an Erweiterungen. Wir setzen auf schlanke, geprüfte Plugins und Härtung.' },
+  { name: 'Drupal', meta: 'Für komplexe Datenstrukturen', text: 'Geeignet für Portale mit vielen Inhaltstypen, Verzeichnissen und Schnittstellen. Hohe Sicherheitsstandards und ein ausgereiftes Rechtesystem.' },
+  { name: 'Contao', meta: 'Barrierefreiheit und Sicherheit im Fokus', text: 'Open-Source-CMS aus dem deutschsprachigen Raum mit starkem Fokus auf barrierefreie Ausgabe und Sicherheit. Gut für mittelgroße Auftritte von Kommunen und Einrichtungen.' },
+  { name: 'Joomla', meta: 'Bewährt für mittelgroße Websites', text: 'Solide Lösung mit integrierter Mehrsprachigkeit und Benutzerverwaltung. Wir betreuen und modernisieren auch bestehende Joomla-Installationen.' },
+  { name: 'Neos', meta: 'Redaktion direkt auf der Seite', text: 'Modernes CMS mit Inline-Bearbeitung: Redakteure sehen beim Schreiben genau, wie die Seite später aussieht. Gut für strukturierte Inhalte.' },
+  { name: 'Craft CMS', meta: 'Maßgeschneiderte Inhaltsmodelle', text: 'Sehr flexibel bei individuellen Inhaltsstrukturen und aufgeräumt in der Redaktionsoberfläche.' },
+  { name: 'Headless: Strapi, Directus', meta: 'Inhalte für mehrere Kanäle', text: 'Wenn Inhalte nicht nur auf der Website, sondern auch in Apps, Infoterminals oder Open-Data-Schnittstellen erscheinen sollen.' },
+  { name: 'Statische Websites: Astro, Hugo', meta: 'Maximal schnell und sicher', text: 'Für Auftritte, die sich selten ändern: kein Datenbankserver, minimale Angriffsfläche, sehr geringe Betriebskosten. Auf Wunsch mit einfacher Redaktionsoberfläche.' },
+];
+---
+<Base title="CMS & Technik" description="Wir setzen Websites mit TYPO3, WordPress, Drupal, Contao, Joomla, Neos, Craft CMS, Headless-CMS und statischen Generatoren um – passend zu den Vorgaben Ihrer Ausschreibung.">
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">CMS &amp; Technik</span>
+      <h1>Das passende Redaktionssystem für Ihre Anforderungen</h1>
+      <p class="lead">Wir sind an kein System gebunden. Gibt Ihre Leistungsbeschreibung ein CMS vor, setzen wir es um. Ist die Wahl offen, empfehlen wir nach Umfang, Redaktionsprozessen, IT-Vorgaben und Betriebskosten.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-3">
+      {systems.map((s) => (
+        <div class="card"><h3>{s.name}</h3><p class="meta">{s.meta}</p><p>{s.text}</p></div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2>Worauf wir bei der Auswahl achten</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption class="visually-hidden">Kriterien für die Auswahl eines CMS</caption>
+          <thead><tr><th scope="col">Kriterium</th><th scope="col">Was wir prüfen</th></tr></thead>
+          <tbody>
+            <tr><td>Vorgaben des Auftraggebers</td><td>Landes- oder Kommunalstandards, bereits eingesetzte Systeme, Vorgaben der IT-Abteilung</td></tr>
+            <tr><td>Redaktion</td><td>Anzahl der Redakteure, Rollen, Freigabeprozesse, Vorkenntnisse im Team</td></tr>
+            <tr><td>Funktionsumfang</td><td>Benötigte Module, Mehrsprachigkeit, Schnittstellen, Verzeichnisse</td></tr>
+            <tr><td>Barrierefreiheit</td><td>Barrierefreie Ausgabe und barrierefreie Bedienung des Backends</td></tr>
+            <tr><td>Sicherheit und Betrieb</td><td>Update-Zyklen, Langzeit-Support, Sicherheitshistorie, Hosting-Anforderungen</td></tr>
+            <tr><td>Wirtschaftlichkeit</td><td>Lizenzkosten (bei Open Source keine), Aufwand für Wartung über die Vertragslaufzeit</td></tr>
+            <tr><td>Zukunftssicherheit</td><td>Größe der Community, Verfügbarkeit von Dienstleistern, Exportmöglichkeiten</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      <div>
+        <span class="eyebrow">Hosting</span>
+        <h2>Betrieb nach Ihren Vorgaben</h2>
+        <ul class="checklist">
+          <li>Managed Hosting in zertifizierten Rechenzentren in Deutschland</li>
+          <li>Betrieb in Ihrer eigenen Infrastruktur oder beim kommunalen IT-Dienstleister</li>
+          <li>Getrennte Test- und Produktivumgebung</li>
+          <li>Versionsverwaltung und nachvollziehbare Deployments</li>
+        </ul>
+      </div>
+      <div>
+        <span class="eyebrow">Standards</span>
+        <h2>Offene Standards, keine Abhängigkeit</h2>
+        <ul class="checklist">
+          <li>Ausschließlich Open-Source-Systeme ohne Lizenzgebühren</li>
+          <li>Valides, semantisches HTML und barrierefreie Komponenten</li>
+          <li>Dokumentierter Quellcode und Betriebshandbuch</li>
+          <li>Vollständige Übergabe am Vertragsende</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <Cta title="Sie haben bereits ein CMS im Einsatz?" text="Wir prüfen Ihr bestehendes System und sagen Ihnen, ob sich ein Update, eine Modernisierung oder ein Wechsel lohnt." />
+</Base>
