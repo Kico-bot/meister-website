@@ -33,7 +33,6 @@ npm run build    # erzeugt ./dist
 
 ## Vor dem Livegang
 
-- [ ] Anschrift (und optional Telefon, USt-IdNr.) in `src/site.ts` eintragen – Pflicht fürs Impressum
-- [ ] Postfach `kontakt@webseiten-meister.de` einrichten (z. B. Cloudflare Email Routing)
-- [ ] Preise unter `/pakete/` prüfen
+- [ ] Postfach `info@webseiten-meister.de` einrichten (z. B. Cloudflare Email Routing)
+- [ ] Optional: Telefon und USt-IdNr. in `src/site.ts` ergänzen
 - [ ] Referenzen ergänzen, sobald vorhanden
