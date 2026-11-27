@@ -35,4 +35,4 @@ npm run build    # erzeugt ./dist
 
 - [ ] Postfach `info@webseiten-meister.de` einrichten (z. B. Cloudflare Email Routing)
 - [ ] Optional: Telefon und USt-IdNr. in `src/site.ts` ergänzen
-- [ ] Referenzen ergänzen, sobald vorhanden
+
