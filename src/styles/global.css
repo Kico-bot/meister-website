@@ -56,16 +56,16 @@ p { margin: 0 0 1rem; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 68px; }
 .brand { display: inline-flex; align-items: center; gap: .6rem; font-weight: 750; font-size: 1.1rem; color: var(--navy); text-decoration: none; }
 .brand svg { width: 34px; height: 34px; flex: none; }
-.brand span small { display: block; font-weight: 500; font-size: .72rem; color: var(--muted); letter-spacing: .02em; }
+.brand span small { display: block; white-space: nowrap; font-weight: 500; font-size: .72rem; color: var(--muted); letter-spacing: .02em; }
 
 .nav-toggle { display: none; }
 .nav-toggle-label { display: none; cursor: pointer; padding: .5rem .7rem; border: 1px solid var(--line); border-radius: 8px; font-weight: 600; color: var(--navy); }
 .main-nav ul { display: flex; gap: .25rem; list-style: none; margin: 0; padding: 0; align-items: center; }
-.main-nav a { display: block; padding: .5rem .7rem; border-radius: 8px; color: var(--ink); text-decoration: none; font-weight: 550; font-size: .97rem; }
+.main-nav a { display: block; padding: .5rem .7rem; border-radius: 8px; color: var(--ink); text-decoration: none; font-weight: 550; font-size: .97rem; white-space: nowrap; }
 .main-nav a:hover, .main-nav a[aria-current="page"] { background: var(--bg-soft); color: var(--navy); }
 .main-nav a.btn { color: var(--accent-ink); }
 
-@media (max-width: 960px) {
+@media (max-width: 1180px) {
   .nav-toggle-label { display: inline-block; }
   .main-nav { display: none; position: absolute; left: 0; right: 0; top: 68px; background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow); }
   .main-nav ul { flex-direction: column; align-items: stretch; padding: .75rem 16px 1rem; }
