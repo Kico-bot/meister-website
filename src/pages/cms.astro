@@ -3,23 +3,24 @@ import Base from '../layouts/Base.astro';
 import Cta from '../components/Cta.astro';
 
 const systems = [
-  { name: 'TYPO3', meta: 'Enterprise-CMS, in Verwaltungen weit verbreitet', text: 'Stark bei großen Auftritten mit vielen Redakteuren, Mehrsprachigkeit, feinen Rechten und mehreren Websites in einer Installation. Langzeit-Support-Versionen sorgen für Planungssicherheit über viele Jahre.' },
+  { name: 'TYPO3', meta: 'Enterprise-CMS für große Auftritte', text: 'Stark bei großen Auftritten mit vielen Redakteuren, Mehrsprachigkeit, feinen Rechten und mehreren Websites in einer Installation. Langzeit-Support-Versionen sorgen für Planungssicherheit über viele Jahre.' },
   { name: 'WordPress', meta: 'Flexibel und leicht zu bedienen', text: 'Ideal für Projektwebsites, Kampagnen und kleinere Einrichtungen. Sehr einfache Redaktion, große Auswahl an Erweiterungen. Wir setzen auf schlanke, geprüfte Plugins und Härtung.' },
   { name: 'Drupal', meta: 'Für komplexe Datenstrukturen', text: 'Geeignet für Portale mit vielen Inhaltstypen, Verzeichnissen und Schnittstellen. Hohe Sicherheitsstandards und ein ausgereiftes Rechtesystem.' },
   { name: 'Contao', meta: 'Barrierefreiheit und Sicherheit im Fokus', text: 'Open-Source-CMS aus dem deutschsprachigen Raum mit starkem Fokus auf barrierefreie Ausgabe und Sicherheit. Gut für mittelgroße Auftritte von Kommunen und Einrichtungen.' },
   { name: 'Joomla', meta: 'Bewährt für mittelgroße Websites', text: 'Solide Lösung mit integrierter Mehrsprachigkeit und Benutzerverwaltung. Wir betreuen und modernisieren auch bestehende Joomla-Installationen.' },
   { name: 'Neos', meta: 'Redaktion direkt auf der Seite', text: 'Modernes CMS mit Inline-Bearbeitung: Redakteure sehen beim Schreiben genau, wie die Seite später aussieht. Gut für strukturierte Inhalte.' },
   { name: 'Craft CMS', meta: 'Maßgeschneiderte Inhaltsmodelle', text: 'Sehr flexibel bei individuellen Inhaltsstrukturen und aufgeräumt in der Redaktionsoberfläche.' },
+  { name: 'Onlineshops: WooCommerce, Shopware, Shopify', meta: 'E-Commerce für jede Größe', text: 'WooCommerce für den Einstieg mit WordPress, Shopware für anspruchsvolle Shops mit vielen Produkten, Shopify für schnelle Starts ohne eigenes Hosting. Inklusive Zahlungsarten, Versand und Rechtstexten.' },
   { name: 'Headless: Strapi, Directus', meta: 'Inhalte für mehrere Kanäle', text: 'Wenn Inhalte nicht nur auf der Website, sondern auch in Apps, Infoterminals oder Open-Data-Schnittstellen erscheinen sollen.' },
   { name: 'Statische Websites: Astro, Hugo', meta: 'Maximal schnell und sicher', text: 'Für Auftritte, die sich selten ändern: kein Datenbankserver, minimale Angriffsfläche, sehr geringe Betriebskosten. Auf Wunsch mit einfacher Redaktionsoberfläche.' },
 ];
 ---
-<Base title="CMS & Technik" description="Wir setzen Websites mit TYPO3, WordPress, Drupal, Contao, Joomla, Neos, Craft CMS, Headless-CMS und statischen Generatoren um – passend zu den Vorgaben Ihrer Ausschreibung.">
+<Base title="CMS & Technik" description="Wir setzen Websites und Shops mit WordPress, TYPO3, Drupal, Contao, Joomla, Neos, Craft CMS, WooCommerce, Shopware, Shopify, Headless-CMS und statischen Generatoren um.">
   <section class="page-head">
     <div class="container">
       <span class="eyebrow">CMS &amp; Technik</span>
-      <h1>Das passende Redaktionssystem für Ihre Anforderungen</h1>
-      <p class="lead">Wir sind an kein System gebunden. Gibt Ihre Leistungsbeschreibung ein CMS vor, setzen wir es um. Ist die Wahl offen, empfehlen wir nach Umfang, Redaktionsprozessen, IT-Vorgaben und Betriebskosten.</p>
+      <h1>Das passende System für Ihr Projekt</h1>
+      <p class="lead">Wir sind an kein System gebunden. Haben Sie bereits ein CMS oder eine Vorgabe, arbeiten wir damit. Ist die Wahl offen, empfehlen wir das System, das zu Umfang, Team und Budget passt.</p>
     </div>
   </section>
 
@@ -41,7 +42,7 @@ const systems = [
           <caption class="visually-hidden">Kriterien für die Auswahl eines CMS</caption>
           <thead><tr><th scope="col">Kriterium</th><th scope="col">Was wir prüfen</th></tr></thead>
           <tbody>
-            <tr><td>Vorgaben des Auftraggebers</td><td>Landes- oder Kommunalstandards, bereits eingesetzte Systeme, Vorgaben der IT-Abteilung</td></tr>
+            <tr><td>Ihre Ausgangslage</td><td>Bereits eingesetzte Systeme, Vorgaben Ihrer IT, vorhandene Inhalte</td></tr>
             <tr><td>Redaktion</td><td>Anzahl der Redakteure, Rollen, Freigabeprozesse, Vorkenntnisse im Team</td></tr>
             <tr><td>Funktionsumfang</td><td>Benötigte Module, Mehrsprachigkeit, Schnittstellen, Verzeichnisse</td></tr>
             <tr><td>Barrierefreiheit</td><td>Barrierefreie Ausgabe und barrierefreie Bedienung des Backends</td></tr>
@@ -61,7 +62,7 @@ const systems = [
         <h2>Betrieb nach Ihren Vorgaben</h2>
         <ul class="checklist">
           <li>Managed Hosting in zertifizierten Rechenzentren in Deutschland</li>
-          <li>Betrieb in Ihrer eigenen Infrastruktur oder beim kommunalen IT-Dienstleister</li>
+          <li>Betrieb auf Wunsch auch in Ihrer eigenen Infrastruktur</li>
           <li>Getrennte Test- und Produktivumgebung</li>
           <li>Versionsverwaltung und nachvollziehbare Deployments</li>
         </ul>
@@ -70,7 +71,7 @@ const systems = [
         <span class="eyebrow">Standards</span>
         <h2>Offene Standards, keine Abhängigkeit</h2>
         <ul class="checklist">
-          <li>Ausschließlich Open-Source-Systeme ohne Lizenzgebühren</li>
+          <li>Bevorzugt Open-Source-Systeme ohne Lizenzgebühren</li>
           <li>Valides, semantisches HTML und barrierefreie Komponenten</li>
           <li>Dokumentierter Quellcode und Betriebshandbuch</li>
           <li>Vollständige Übergabe am Vertragsende</li>

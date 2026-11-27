@@ -1,7 +1,7 @@
 // Zentrale Angaben – hier einmal pflegen, sie werden überall auf der Seite verwendet.
 export const site = {
   name: 'Webseiten-Meister',
-  claim: 'Webagentur für öffentliche Auftraggeber',
+  claim: 'Ihre Webagentur aus München',
   url: 'https://webseiten-meister.de',
   owner: 'Kristian Dabic',
   email: 'info@webseiten-meister.de',
